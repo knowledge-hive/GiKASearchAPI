@@ -24,9 +24,7 @@ To set up the environment for GiKASearchAPI, follow these steps:
 
 ## Storage Directory
 
-The storage directory contains essential data files required for the API to function correctly. Follow these steps to set it up: 
-
-Download it from here: [storage.tar.gz](https://drive.google.com/file/d/1FIl7Qf_XCaXYnEJqDusBeHiY-ElZEdPK/view?usp=sharing)
+The storage directory contains essential data files required for the API to function correctly. Follow these steps to set it up:
 
 1. **Download the Storage Directory**: Obtain the storage directory from the provided link.
 
@@ -139,6 +137,29 @@ payload = {
     "user_query": "Show me some kaftan dresses"
 }
 response = requests.post("http://localhost:7000/full_search", json=payload)
+print(response.json())
+```
+
+### Search Products via Image
+
+To search for products using an image, use the following code:
+
+```python
+import requests
+import base64
+
+def encode_image_to_base64(image_bytes: bytes) -> str:
+    return base64.b64encode(image_bytes).decode('utf-8')
+
+with open("image.png", "rb") as f:
+    image_bytes = f.read()
+
+payload = {
+    "session_id": "Test",
+    "image_bytes": encode_image_to_base64(image_bytes),
+    "count": 20
+}
+response = requests.post("http://localhost:7000/get_products_img", json=payload)
 print(response.json())
 ```
 
