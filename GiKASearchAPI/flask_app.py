@@ -66,37 +66,7 @@ def handle_exception(e):
     return jsonify({"error": "Internal Server Error"}), 500
 
 # Dynamically create routes for each function in integrator.py
-
 load_endpoints(app)
-# for name, func in inspect.getmembers(integrator, inspect.isfunction):
-#     def create_endpoint(func):
-#         def endpoint():
-#             try:
-#                 # Extract arguments from request.json
-#                 args = request.json or {}
-#                 # Convert arguments to the correct types based on function signature
-#                 sig = inspect.signature(func)
-#                 typed_args = {
-#                     k: (v if p.annotation == inspect._empty else p.annotation(v))
-#                     for k, v in args.items()
-#                     if k in sig.parameters
-#                     and (p := sig.parameters[k])
-#                 }
-#                 # Call the function and return the result
-#                 result = func(**typed_args)
-#                 return jsonify({"result": result})
-#             except TypeError as e:
-#                 logger.error(f"Type error in endpoint {func.__name__}: {e}")
-#                 return jsonify({"error": "Invalid arguments"}), 400
-#             except Exception as e:
-#                 logger.error(f"Error in endpoint {func.__name__}: {e}", exc_info=True)
-#                 return jsonify({"error": "Internal Server Error"}), 500
-#         endpoint.__name__ = func.__name__
-#         return endpoint
-    
-#     # Register the route
-#     logger.info(f"Registered endpoint: {name}")
-#     app.add_url_rule(f"/{name}", view_func=create_endpoint(func), methods=["POST"])
 
 # Run the Flask app
 if __name__ == "__main__":

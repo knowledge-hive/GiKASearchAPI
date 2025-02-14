@@ -175,7 +175,7 @@
     }
   },
   "ProductSearch": {
-    "host": "https://localhost:9200",
+    "host": "https://91.203.135.146:9200",
     "index_name": "fashion_products",
     "username": "elastic",
     "password": "hghMhR6sNRC94b9DpJNs"

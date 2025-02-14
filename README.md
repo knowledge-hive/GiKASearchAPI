@@ -16,6 +16,33 @@ To set up the environment for GiKASearchAPI, follow these steps:
     ```bash
     conda activate gikasearchapi
     ```
+    Download and add the GPG Key:
+
+        ```bash
+        wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo tee /usr/share/keyrings/elasticsearch-keyring.asc
+        ```
+    Add it to repo:
+        ```bash
+        echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.asc] https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-8.x.list
+        ```
+    Update the package:
+        ```bash
+        sudo apt update
+        ```
+    Install Elasticsearch:
+        ```bash
+        sudo apt install elasticsearch -y
+        ```
+    Enable and start Elasticsearch:
+        ```bash
+        sudo systemctl daemon-reload
+        sudo systemctl enable elasticsearch
+        sudo systemctl start elasticsearch
+        ```
+    Check status:
+        ```bash
+        sudo systemctl status elasticsearch
+        ```
 
 3. **Install Required Dependencies**: Use the `requirements.txt` file to install all necessary Python packages.
     ```bash
