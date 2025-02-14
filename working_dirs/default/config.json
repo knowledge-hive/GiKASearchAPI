@@ -1,0 +1,185 @@
+{
+  "AVexAgent": {
+    "avExtractor": {
+      "avEx-model": "GiKAGraphy/ProductLlama-8B-Instruct",
+      "avEx-model_temperature": 0.1,
+      "quantization": "16bit",
+      "map_exp": {
+        "embedding_model": "all-MiniLM-L12-v2",
+        "embeddings_file": "storage/resources/embeddings.json",
+        "map_attributes": {
+          "mapping_file": "storage/resources/attribute_mapping.json",
+          "similarity_threshold": 0.6
+        },
+        "map_values": {
+          "mapping_file": "storage/resources/value_mapping.json",
+          "similarity_threshold": 0.8
+        },
+        "map_value_groups": {
+          "mapping_file": "storage/resources/value_groups.json",
+          "similarity_threshold": 0.8
+        }
+      },
+      "query_keyword_specifiers": {
+        "Brand": {
+          "replacements": {
+            "&": [
+              "and",
+              "ampersand",
+              ""
+            ],
+            " ": [
+              "",
+              " "
+            ],
+            ".": [
+              "",
+              " "
+            ],
+            "+": [
+              "",
+              " "
+            ],
+            "-": [
+              "",
+              " "
+            ],
+            "5th": [
+              "fifth",
+              "5 th",
+              ""
+            ],
+            "7": [
+              "seven",
+              ""
+            ]
+          },
+          "keywords": [
+            "& Other Stories",
+            "5th & Ocean",
+            "7 For All Mankind",
+            "ASOS WHITE",
+            "And Now This",
+            "Autumn Cashmere",
+            "BA&SH",
+            "BASIX BLACK LABEL",
+            "BLUE NAVY",
+            "NAVY BLUE",
+            "BORGO DE NOR",
+            "BOSS Orange",
+            "Bailey Rose",
+            "Bardot",
+            "Basic Pleasure Mode",
+            "Bec&Bridge",
+            "Black Halo",
+            "C&T",
+            "CLOTH & STONE",
+            "CLOUD TEN",
+            "COTTON BY AUTUMN CASHMERE",
+            "Celebrity Pink",
+            "Cotton Citizen",
+            "Cotton On",
+            "Dodo Bar Or",
+            "Dr Denim",
+            "E.L.V. DENIM X THE OUTNET",
+            "E.L.V. Denim",
+            "ENDLESS ROSE",
+            "Eb Denim",
+            "Emerald Sundae",
+            "Everly Grey",
+            "Extreme Cashmere",
+            "F.R.S For Restless Sleepers",
+            "For Love & Lemons",
+            "For Restless Sleepers",
+            "GREY COLLECTIVE",
+            "GREY LAB",
+            "Gold Hawk",
+            "Golden Goose",
+            "H&M",
+            "HUNTER & BROWN",
+            "Hemant and Nandita",
+            "Hippie Rose",
+            "ICON DENIM LA",
+            "IEENA FOR MAC DUGGAL",
+            "IN THE MOOD FOR LOVE",
+            "IRIS & INK",
+            "Indigo Poppy",
+            "Isla & White",
+            "Jaded Rose",
+            "Jaded Rose Petite",
+            "Kimchi Blue",
+            "Kingston Grey",
+            "Kiss The Sky",
+            "LELA ROSE",
+            "LILLA P",
+            "Lace & Beads",
+            "Lace & Beads Petite",
+            "Lace & Beads Plus",
+            "MOTHER OF PEARL",
+            "Mango",
+            "Marine Serre",
+            "NET-A-PORTER",
+            "Neon Rose",
+            "Night Night by Jonathan Simkhai",
+            "Nude",
+            "OGD One Grey Day",
+            "OLD NAVY",
+            "Off-White",
+            "Petal and Pup",
+            "Pistola Denim",
+            "Planet Gold",
+            "Proenza Schouler White Label",
+            "Pull&Bear",
+            "R&M RICHARDS",
+            "ROSE CARMINE",
+            "ROWEN ROSE",
+            "Rag & Bone",
+            "Red Valentino",
+            "Rococo Sand",
+            "Ruby Rd.",
+            "SAGE COLLECTIVE",
+            "Sandy Liang",
+            "Sea",
+            "Second Skin",
+            "See Rose Go",
+            "Significant Other",
+            "Skin",
+            "Solid & Striped",
+            "The Rose Ibiza",
+            "True Violet",
+            "Velvet",
+            "Violet Weekend",
+            "WHITE CLOSET",
+            "White Mark",
+            "ivy + blu"
+          ]
+        }
+      }
+    },
+    "classifier": {
+      "model": "unsloth/gemma-2-2b-it-bnb-4bit",
+      "embedding_model": "all-MiniLM-L12-v2",
+      "temperature": 0.3
+    },
+    "history": {
+      "chat_history": {
+        "conversation": [],
+        "last_updated_query": "",
+        "last_attributes": [],
+        "chatter": []
+      },
+      "classifier_history": {
+        "conversation": [],
+        "last_updated_query": ""
+      }
+    }
+  },
+  "ProductSearch": {
+    "host": "https://localhost:9200",
+    "index_name": "fashion_products",
+    "username": "elastic",
+    "password": "hghMhR6sNRC94b9DpJNs"
+  },
+  "ImageSearch": {
+  }
+}

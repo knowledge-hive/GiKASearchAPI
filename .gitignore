@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 # C extensions
-*.so
+# *.so
 
 # Distribution / packaging
 .Python
@@ -57,6 +57,9 @@ cover/
 
 # Django stuff:
 *.log
+logs/
+storage/
+*.out
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
