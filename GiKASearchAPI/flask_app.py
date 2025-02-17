@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 import os
 import logging
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, Response
 from .modules.integrator import load_endpoints
 from werkzeug.exceptions import HTTPException
 
@@ -46,13 +46,13 @@ def log_request_info():
 
 # Log response information after handling the request
 @app.after_request
-def log_response_info(response):
+def log_response_info(response: Response):
     logger.info(f"Response: {response.status} - Data: {response.get_data(as_text=True)} - Headers: {response.headers}")
     return response
 
 # Error handler for HTTP exceptions
 @app.errorhandler(HTTPException)
-def handle_http_exception(e):
+def handle_http_exception(e: HTTPException):
     logger.error(f"HTTP exception: {e.description}")
     response = e.get_response()
     response.data = jsonify({"error": e.description})
@@ -70,4 +70,4 @@ load_endpoints(app)
 
 # Run the Flask app
 if __name__ == "__main__":
-    app.run(host=HOST, port=PORT)
+    app.run(host=HOST, port=int(PORT))
