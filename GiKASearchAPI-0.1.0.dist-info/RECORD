@@ -1,5 +1,5 @@
 GiKASearchAPI/__init__.cpython-310-x86_64-linux-gnu.so,sha256=8fR7rbGmyQqLurNuFYe9jnaEeEwWVC_5JXBMy1nxUSg,27592
-GiKASearchAPI/flask_app.py,sha256=DV5XpeOMm5KDBqnY9SC3_2JN141I2DXSY2LMJ6RNp68,2374
+GiKASearchAPI/flask_app.py,sha256=c0lqyy9ptVjDguZVjoRqOlILHJiSvzZ-RDe4iis2Qls,2380
 GiKASearchAPI/modules/__init__.cpython-310-x86_64-linux-gnu.so,sha256=thAecPl0iGj0iXcwAtahMbh67C0KvTp19tA4OtMP7s4,27592
 GiKASearchAPI/modules/integrator.cpython-310-x86_64-linux-gnu.so,sha256=7cCvYpBb-SW6964inwRIuKR_ZZpTElqWVqr1tdBofFE,209072
 GiKASearchAPI/modules/modelLoaders.cpython-310-x86_64-linux-gnu.so,sha256=ZXgP-m61ILewIBtyuRpbwc12hudXkZ4pzAbNzT4RtbM,146176
@@ -8,7 +8,7 @@ GiKASearchAPI/modules/AVex_agent/__init__.cpython-310-x86_64-linux-gnu.so,sha256
 GiKASearchAPI/modules/AVex_agent/agent.cpython-310-x86_64-linux-gnu.so,sha256=M_V5tvms_XBluQdTjLa7ylky531iZV4eIbrNBs9X1Gc,87488
 GiKASearchAPI/modules/AVex_agent/utils.cpython-310-x86_64-linux-gnu.so,sha256=nZdBtgUIco4dgYR6xpJYJ9Ugitj1PWVOrfQ3iu5MfjE,172200
 GiKASearchAPI/modules/AVex_agent/av_extractor/__init__.cpython-310-x86_64-linux-gnu.so,sha256=kdL8FtmNeR8yjINP5Jh9IeVvsVCSFA9CaQpcCTL1Dqs,38864
-GiKASearchAPI/modules/AVex_agent/av_extractor/avExtractor.cpython-310-x86_64-linux-gnu.so,sha256=33jKpZgLJPztD42QViaGl_RDoCRm4bUAZcP4cPkRGQ0,457264
+GiKASearchAPI/modules/AVex_agent/av_extractor/avExtractor.cpython-310-x86_64-linux-gnu.so,sha256=w3K53korZig_67cQPjoSQv1KSndxVHjLWwRdaCw4lD8,452616
 GiKASearchAPI/modules/AVex_agent/av_extractor/prompts.cpython-310-x86_64-linux-gnu.so,sha256=f-j-58VFfoCyuJ9g7JHWBJuVy-KXXjhTwGe6SH9qyAo,55104
 GiKASearchAPI/modules/AVex_agent/query_classifier/__init__.cpython-310-x86_64-linux-gnu.so,sha256=K5kVTI5rbWwUmlqKdYmRZhVOuJr4Ch6x_14ChblIk1c,38872
 GiKASearchAPI/modules/AVex_agent/query_classifier/classifier.cpython-310-x86_64-linux-gnu.so,sha256=FUCDd7dKg26yQo0XwPozW-3Mr3F4-7hUitZBHLP-2Ok,168728
@@ -17,11 +17,11 @@ GiKASearchAPI/modules/AVex_agent/query_classifier/rag.cpython-310-x86_64-linux-g
 GiKASearchAPI/modules/Search/__init__.cpython-310-x86_64-linux-gnu.so,sha256=RQkrLgSmrtebIbdIWAGHW6IWwMrpMg7HoKDy8TUYjFU,45840
 GiKASearchAPI/modules/Search/utils.cpython-310-x86_64-linux-gnu.so,sha256=clpY4kEnsyBYk4jLcK8UCeg-HfUbi7mpFqFCwECZ6N0,111808
 GiKASearchAPI/modules/Search/elastic_search/__init__.cpython-310-x86_64-linux-gnu.so,sha256=h4UmP9IrcYKjk8zot_H4zCx2rrGEh0869ejx8c-EGgQ,38872
-GiKASearchAPI/modules/Search/elastic_search/index.cpython-310-x86_64-linux-gnu.so,sha256=JGDILQDEC-NqSSTvs8ZLghJ4Q3IH80g3XWq23stxHsI,190000
-GiKASearchAPI/modules/Search/elastic_search/index_utils.cpython-310-x86_64-linux-gnu.so,sha256=dyA8gpLB_qc1S7irMzSYPiso_va2Bi7X8aTnKDrENl4,98192
-GiKASearchAPI/modules/Search/elastic_search/product_search.cpython-310-x86_64-linux-gnu.so,sha256=wc7H9NCd39Yci8N3dROEZJdtBbmXJ4M8QNUBlEsJez0,173872
+GiKASearchAPI/modules/Search/elastic_search/index.cpython-310-x86_64-linux-gnu.so,sha256=CV6PJDPKZBg0cRbyA3HFVdgk1183Uvg5P5UdAOqfxdo,190040
+GiKASearchAPI/modules/Search/elastic_search/index_utils.cpython-310-x86_64-linux-gnu.so,sha256=F1xRUrFEOwPoprYVNsxcrqqYMo7w_eyQE4MRFLh41Bo,98232
+GiKASearchAPI/modules/Search/elastic_search/product_search.cpython-310-x86_64-linux-gnu.so,sha256=0Yk8eFc6yMNaXmoL3YlK2ZkY4YaJalWtkyjPSPxGcjI,173896
 GiKASearchAPI/modules/Search/image_search/__init__.cpython-310-x86_64-linux-gnu.so,sha256=wzoLzw1r25EZJJzO-DhJy3oSGRt8pAOA-4F1h-7UM0Q,33936
-GiKASearchAPI/modules/Search/image_search/similar_image_search.cpython-310-x86_64-linux-gnu.so,sha256=hO4wzRaj_mCQkmQT-XHuHf-NafETgi3GG8i-bUiVvFQ,316640
+GiKASearchAPI/modules/Search/image_search/similar_image_search.cpython-310-x86_64-linux-gnu.so,sha256=4bBFovGn_J8GYl8RuQJN1cCHfYtH8XDRGxMWnjDGlWg,312080
 GiKASearchAPI/modules/manager/__init__.cpython-310-x86_64-linux-gnu.so,sha256=BLaXZiBkW5lDLQ7Vd_or3Hpd0wuEITUdfWumyNEftCs,45704
 GiKASearchAPI/modules/manager/session_manager.cpython-310-x86_64-linux-gnu.so,sha256=uhxhWGhu5LNdVcCoNFIRd8EHqqHDebUnUHJnmJbUUBk,142728
 GiKASearchAPI-0.1.0.dist-info/METADATA,sha256=tDl_AxN0yxdJbqWPvYjnzq-baFBFp0JWwelwundskqM,57

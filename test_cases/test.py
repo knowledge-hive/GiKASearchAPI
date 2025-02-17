@@ -5,6 +5,7 @@ import json
 
 payload = {
     "session_id": "Test",
+    # "user_query": "reset",
     "user_query": "Blue ombre dress under 200"
 }
 response = requests.post("http://localhost:7000/full_search", json=payload)

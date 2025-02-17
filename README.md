@@ -53,7 +53,9 @@ To set up the environment for GiKASearchAPI, follow these steps:
 
 The storage directory contains essential data files required for the API to function correctly. Follow these steps to set it up:
 
-1. **Download the Storage Directory**: Obtain the storage directory from the provided link.
+1. **Download the Storage Directory**: Obtain the storage directory from the provided link. (storage.tar.gz)[https://drive.google.com/file/d/1FIl7Qf_XCaXYnEJqDusBeHiY-ElZEdPK/view?usp=sharing]
+
+    You can download the storage directory from the provided link and save it in a directory named `storage`.
 
 2. **Place the Storage Directory**: Ensure the storage directory is placed in the current directory where the GiKASearchAPI project resides.
 
@@ -183,8 +185,7 @@ with open("image.png", "rb") as f:
 
 payload = {
     "session_id": "Test",
-    "image_bytes": encode_image_to_base64(image_bytes),
-    "count": 20
+    "image_bytes": encode_image_to_base64(image_bytes)
 }
 response = requests.post("http://localhost:7000/get_products_img", json=payload)
 print(response.json())
