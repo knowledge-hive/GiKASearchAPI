@@ -6,7 +6,15 @@ import json
 payload = {
     "session_id": "Test",
     # "user_query": "reset",
-    "user_query": "Blue ombre dress under 200"
+    "user_query": "classy knee-length cocktail dress",
+    # "search_filters": {
+    #     "Season": "Summer",
+    # },
+    "return_attrs": {
+        "Category",
+        "Item_url",
+        "Display_image"
+    }
 }
 response = requests.post("http://localhost:7000/full_search", json=payload)
 print(json.dumps(response.json(), indent=2))
@@ -19,7 +27,11 @@ with open("image.png", "rb") as f:
 
 payload = {
     "session_id": "Test",
-    "image_bytes": encode_image_to_base64(image_bytes)
+    "image_bytes": encode_image_to_base64(image_bytes),
+    "return_attrs": {
+        "Category",
+        "Brand"
+    }
 }
 response = requests.post("http://localhost:7000/get_products_img", json=payload)
 print(json.dumps(response.json(), indent=2))

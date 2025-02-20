@@ -14,10 +14,6 @@
         "map_values": {
           "mapping_file": "storage/resources/value_mapping.json",
           "similarity_threshold": 0.8
-        },
-        "map_value_groups": {
-          "mapping_file": "storage/resources/value_groups.json",
-          "similarity_threshold": 0.8
         }
       },
       "query_keyword_specifiers": {
